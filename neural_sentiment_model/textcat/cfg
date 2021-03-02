@@ -1,0 +1,9 @@
+{
+  "architecture":"ensemble",
+  "labels":[
+    "pos",
+    "neg"
+  ],
+  "pretrained_vectors":null,
+  "pretrained_dims":null
+}

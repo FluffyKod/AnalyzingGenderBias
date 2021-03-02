@@ -1,0 +1,70 @@
+/*********************************************
+COLOR CODING
+*********************************************/
+
+:root {
+    --background: #dbe9ec;
+    --red: #ffcabe;
+    --blue: #86d4cb;
+    --yellow: #e9c46a;
+    --green: #d8eeb3;
+    --purple: #e4c1f9;
+  }
+  
+  .positive {
+    background-color: var(--green);
+  }
+  
+  .negative {
+    background-color: var(--red);
+  }
+  
+  /* .neutral {
+    background-color: var(--green);
+  } */
+  
+  /*********************************************
+  GENERAL STYLES
+  *********************************************/
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: var(--background);
+    width: 100vw;
+    padding: 5%;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  h1 {
+      margin-bottom: 50px;
+  }
+  
+  #articles {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+  }
+  
+  #articles div {
+    background: #fff;
+    width: 45%;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #articles div p {
+    line-height: 1rem;
+    margin: 30px 0;
+  }
+  
