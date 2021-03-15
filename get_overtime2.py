@@ -292,20 +292,20 @@ def main():
 # GENERAL TESTING
 ##################################
 
-# books_lexicon = load_book_database(BOOK_FILENAME)
+books_lexicon = load_book_database(BOOK_FILENAME)
 
-# x_values = books_lexicon.keys()
-# y_values = [len(books) for books in books_lexicon.values()]
+x_values = books_lexicon.keys()
+y_values = [len(books) for books in books_lexicon.values()]
 
-# plt.bar(x_values, y_values)
+plt.bar(x_values, y_values)
 # plt.ylim([0,50])
-# plt.xlim([1800, 2000])
-# plt.show()
+plt.xlim([1700, 2020])
+plt.show()
 
 # result = np.load('result.npy', allow_pickle=True)
 # result = result.item()
 
 # print(result[1905]['sentiment']['woman'])
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()

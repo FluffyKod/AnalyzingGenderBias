@@ -39,4 +39,3 @@ for book in corpus:
 
 
 ```
-
