@@ -80,6 +80,39 @@ def load_lexicon():
     # return lexicon
     return lexicon
 
+def load_translated_lexicon(filename):
+    """
+    Loads a translated NRC sentiment lexicon as a dictionary with word keys and numpy arrays containing the boolean representation of the words present feelings.
+    """
+
+    print('...Loading translated NRC lexicon.')
+
+    # open data file
+    with open(filename, 'r') as f:
+        data = f.read()
+
+    # initilaize lexicon
+    lexicon = {}
+
+    # clean data
+    data = data.split('\n')
+
+    # transform into lists
+    for i in range(len(data)):
+        # split word data
+        try:
+            word, sentiments = data[i].split(';')
+
+            sentiments = [int(s) for s in sentiments.split(' ')]
+
+            # add sentiment to array
+            lexicon[word] = np.array(sentiments)
+        except:
+            continue
+        
+    # return lexicon
+    return lexicon
+
 def clean_data(data):
     """
     Cleans gutenberg text data.

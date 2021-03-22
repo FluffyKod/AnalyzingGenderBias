@@ -16,12 +16,12 @@ plt.style.use('seaborn-whitegrid')
 # PARAMETERS
 ##################################
 
-START_YEAR = 1800
-END_YEAR = 2000
+START_YEAR = 1960
+END_YEAR = 2020
 SAMPLE_SIZE = 50
 
 BOOK_FILENAME = 'data/book_lexicon.txt'
-DATA_DIRECTORY = 'results/period_2/'
+DATA_DIRECTORY = 'results/period_modern/'
 
 FILTERS = set(stopwords.words('english')) | set(string.punctuation) | {'--', '“', '”', '’'}
 
@@ -299,7 +299,7 @@ y_values = [len(books) for books in books_lexicon.values()]
 
 plt.bar(x_values, y_values)
 # plt.ylim([0,50])
-plt.xlim([1700, 2020])
+plt.xlim([1830, 2020])
 plt.show()
 
 # result = np.load('result.npy', allow_pickle=True)

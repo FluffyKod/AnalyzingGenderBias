@@ -8,6 +8,7 @@ from nrc import *
 from googletrans import Translator, constants
 from pprint import pprint
 import random
+import os
 
 def translate_lexicon(lexicon, translator, lang, filename, start, end):
     """
@@ -52,10 +53,10 @@ def main():
     Main function
     """
 
-    LANG = 'sv'
+    LANG = 'da'
     FILENAME = f'data/NRC-lexicon-{LANG}.txt'
-    START = 6295
-    END = 6500
+    START = 6360
+    END = START + 300
 
     # reset file
     #open(FILENAME, 'w').close()
